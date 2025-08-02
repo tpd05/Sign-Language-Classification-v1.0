@@ -122,13 +122,13 @@ MÔ HÌNH
 
 Mô hình sử dụng ResNet50 làm backbone, với các lớp tùy chỉnh bao gồm GlobalAveragePooling2D và hai lớp Dense (256 units và 23 units).
 
-Mô hình được huấn luyện với dữ liệu heatmap và đạt độ chính xác 97% trên tập kiểm tra (cập nhật sau khi huấn luyện).
+Mô hình được huấn luyện với dữ liệu heatmap và đạt độ chính xác 90% trên tập kiểm tra (cập nhật sau khi huấn luyện).
 
 
 KẾT QUẢ
 
 
-Mô hình đạt độ chính xác XX% trên tập kiểm tra (cập nhật sau khi huấn luyện).
+Mô hình đạt độ chính xác 90% trên tập kiểm tra (cập nhật sau khi huấn luyện).
 
 Biểu đồ huấn luyện (loss và accuracy) được lưu trong training_plot_keras.png.
 
