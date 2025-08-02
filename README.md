@@ -4,12 +4,12 @@ Sign-Language-Classification-v1.0 là một dự án phân loại ngôn ngữ k�
 
 <img width="700" height="862" alt="image" src="https://github.com/user-attachments/assets/c5e5c51d-ed29-48ee-890c-a12198716ef2" />
 
-Cấu trúc thư mục
+CẤU TRÚC THƯ MỤC
 
 <img width="571" height="155" alt="image" src="https://github.com/user-attachments/assets/8239c40a-7165-4473-add0-3bba081cfa41" />
 
 
-Dự án được tổ chức với các thư mục chính sau:
+CÁC THƯ MỤC CHÍNH
 
 data/: Chứa dữ liệu thu thập được, bao gồm các thư mục con cho từng ký tự (a, b, ..., y), mỗi thư mục chứa 50 file CSV lưu trữ landmarks của tay và mặt.
 
@@ -19,7 +19,7 @@ process_images/: Chứa tệp Jupyter Notebook cho việc thu thập dữ liệu
 
 run_realtime.ipynb: ứng dụng thời gian thực.
 
-Yêu cầu hệ thống để chạy dự án, bạn cần:
+YÊU CẦU HỆ THỐNG
 
 Phần mềm:
 Python 3.8 trở lên, 
@@ -37,18 +37,17 @@ GPU (khuyến nghị để huấn luyện mô hình nhanh hơn)
 
 
 
-Cài đặt
+CÀI ĐẶT
 
 Clone repository:
 git clone https://github.com/your-repo/Sign-Language-Classification-v1.0.git
 cd Sign-Language-Classification-v1.0
 
 
-Cài đặt các gói phụ thuộc:
+CÀI ĐẶT CÁC GÓI
 
 Đảm bảo bạn đã cài đặt Python 3.8+. Bạn có thể sử dụng virtualenv hoặc conda để tạo môi trường ảo.
 
-Cài đặt các gói cần thiết bằng cách chạy:
 
 pip install -r requirements.txt
 
@@ -60,7 +59,7 @@ pip install opencv-python mediapipe pandas numpy scikit-learn tensorflow matplot
 
 
 
-Thiết lập đường dẫn dữ liệu:
+THIẾT LẬP ĐƯỜNG DẪN
 
 Đảm bảo rằng đường dẫn đến thư mục dữ liệu (BASE_PATH) trong các tệp mã nguồn là chính xác.
 
@@ -70,7 +69,7 @@ Bạn có thể cần thay đổi đường dẫn này cho phù hợp với hệ
 
 
 
-Sử dụng
+SỬ DỤNG
 1. Thu thập dữ liệu
 
 Chạy tệp capture_and_process_images.ipynb để thu thập dữ liệu landmarks cho từng ký tự.
@@ -108,7 +107,7 @@ Chạy tệp run_realtime.ipynb để khởi động ứng dụng nhận diện 
 Nhấn Ctrl+C để dừng ứng dụng.
 
 
-Dữ liệu
+DỮ LIỆU
 
 
 Dữ liệu bao gồm landmarks của tay (21 điểm) và mặt (10 điểm cố định) cho 23 ký tự tiếng Việt không dấu.
@@ -118,7 +117,7 @@ Mỗi ký tự có 50 mẫu, được lưu dưới dạng file CSV trong thư m�
 Heatmap được tạo từ landmarks và sử dụng làm đầu vào cho mô hình CNN.
 
 
-Mô hình
+MÔ HÌNH
 
 
 Mô hình sử dụng ResNet50 làm backbone, với các lớp tùy chỉnh bao gồm GlobalAveragePooling2D và hai lớp Dense (256 units và 23 units).
@@ -126,7 +125,7 @@ Mô hình sử dụng ResNet50 làm backbone, với các lớp tùy chỉnh bao 
 Mô hình được huấn luyện với dữ liệu heatmap và đạt độ chính xác XX% trên tập kiểm tra (cập nhật sau khi huấn luyện).
 
 
-Kết quả
+KẾT QUẢ
 
 
 Mô hình đạt độ chính xác XX% trên tập kiểm tra (cập nhật sau khi huấn luyện).
@@ -134,7 +133,7 @@ Mô hình đạt độ chính xác XX% trên tập kiểm tra (cập nhật sau 
 Biểu đồ huấn luyện (loss và accuracy) được lưu trong training_plot_keras.png.
 
 
-Góp ý và phát triển
+GÓP Ý PHÁT TRIỂN
 
 Chúng tôi hoan nghênh mọi đóng góp và đề xuất cải tiến cho dự án. Vui lòng gửi pull request hoặc mở issue trên GitHub để chia sẻ ý tưởng hoặc báo lỗi.
 
