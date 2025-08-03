@@ -109,6 +109,8 @@ Nhấn Ctrl+C để dừng ứng dụng.
 
 DỮ LIỆU
 
+<img width="1024" height="657" alt="image" src="https://github.com/user-attachments/assets/925910c4-0e91-4eed-8c0d-230a4b5e6924" />
+
 
 Dữ liệu bao gồm landmarks của tay (21 điểm) và mặt (10 điểm cố định) cho 23 ký tự tiếng Việt không dấu.
 
@@ -119,6 +121,9 @@ Heatmap được tạo từ landmarks và sử dụng làm đầu vào cho mô h
 
 MÔ HÌNH
 
+<img width="1024" height="1024" alt="ChatGPT Image 09_36_01 3 thg 8, 2025" src="https://github.com/user-attachments/assets/a905d33c-1b2b-4a81-bc4d-9d9c0b09f90c" />
+
+
 
 Mô hình sử dụng ResNet50 làm backbone, với các lớp tùy chỉnh bao gồm GlobalAveragePooling2D và hai lớp Dense (256 units và 23 units).
 
@@ -126,6 +131,9 @@ Mô hình được huấn luyện với dữ liệu heatmap và đạt độ ch�
 
 
 KẾT QUẢ
+
+<img width="1200" height="400" alt="training_plot_keras" src="https://github.com/user-attachments/assets/15a2d742-499b-4b94-af1e-58fde8d8bd2a" />
+
 
 
 Mô hình đạt độ chính xác 90% trên tập kiểm tra (cập nhật sau khi huấn luyện).
